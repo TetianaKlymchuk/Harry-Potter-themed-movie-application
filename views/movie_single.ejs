@@ -5,6 +5,10 @@
 
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+
+
 </head>
 <body>
 
@@ -20,11 +24,10 @@
 		<img src="/images/<%= movie.poster %>" class="img-responsive">
 	</div>
 	
+	
 	<div class="description-wrapper">
-		<div class="description">
-			<h2 class="movie-header"> Description</h2>
+			<h2 class="movie-header">Description</h2>
 			<p><%=movie.description%> </p>
-		</div>
 	</div>
 	
 	<div class="main-characters">
@@ -37,7 +40,19 @@
 			<% } %> 
 		</ul>
 	</div>
-
+	
+	<div class="trailer">
+		<h2 class="movie-header">Trailer</h2>
+		<ul>
+				<a  href="<%= movie.youtube %>" data-fancybox="video" target="_blank" 
+					data-caption="<span title=&quot;Edited&quot;> <%= title %> ✨🎈<br><br>@TetianaKlymchuk</span>"> 
+				<img src="/images/<%= movie.trailer %>" class="img-responsive">
+				</a>
+				
+		</ul>
+	</div>
+	
+		
 </div>	
 
 <% include partials/footer.ejs %>

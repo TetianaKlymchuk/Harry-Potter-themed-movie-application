@@ -7,6 +7,7 @@ body {
 .content-padding {
 	padding-left: 11%;
 	padding-right: 11%;
+	margin-left: 50px;
 }
 
 
@@ -15,7 +16,7 @@ body {
 Hero Image / Title Styles 
 ----------------------------- */
 #hero-image {
-	height: 400px;
+	height: 550px;
 	width: 100%;
 	background-color: #444;
 	background-image: url('../images/death_star_image.jpg');
@@ -110,8 +111,8 @@ Home Page Posters Styles
 	padding-top: 75px;
 }
 .poster {
-	width: 30%;
-	margin-right: 4%;
+	width: 20%;
+	margin-left: 4%;
 	margin-bottom:4%;
 	float:left;
 	position: relative;
@@ -172,7 +173,8 @@ footer::before {
 }
 
 footer p {
-	float: left;
+	float: center;
+	margin-left: 430px;
 	color: #999;
 	letter-spacing: 0.3px;
 	font-size: 12px;
@@ -292,7 +294,6 @@ Movie-Single Poster and Description Styles
   display: inline-block;
   margin-top: 0px;1
   margin-bottom: 15px;
-  margin-left: 40px;
 }
 
 .description-wrapper p {
@@ -300,21 +301,27 @@ Movie-Single Poster and Description Styles
 	letter-spacing: 0.3px;
 	font-size: 13px;
 	margin-bottom: 25px;
+	padding-right: 40px;
 	
 }
 
 .main-characters ul li {
 	display: inline-block;
 	list-style: none;
-	margin-right: 20px;
-	margin-left: 40px;
 	margin-bottom: 15px;
 	letter-spacing: 0.3px;
 	font-size: 13px;
+	padding-left: 40px;
 }
 
-.main-characters ul {
-	padding-left: 250px;
+
+}	
+.trailer {
+	float: right;
+	margin-left: 5%;
+	width: 65%;
+	margin-top: 50px;
+	
 }
 
 
