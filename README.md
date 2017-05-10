@@ -1,6 +1,6 @@
 # Harry-Potter-themed-movie-application
 
-## I am a big fan of Harry Potter and when I was facing to the problem of choosing a topic for my future application, I was pretty fast in my choise. In fact, it is possible to choose ant theme you prefer.
+## I am a big fan of Harry Potter and when I was facing to the problem of choosing a topic for my future application, I was pretty fast in my choise. In fact, it is possible to choose any theme you prefer.
 
 ### In this application one can get started using Node.js and Express.js. 
 
