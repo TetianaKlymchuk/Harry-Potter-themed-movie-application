@@ -20,27 +20,29 @@
 			<img src="/images/<%= movie.poster %>" class="img-responsive">
 		</div>
 
-		<div class="description-wrapper">
-			<h2 class="movie-header">Description</h2>
-			<p><%=movie.description%> </p>
-		</div>
+		<div class="single-movie-info">
+			<div class="description-wrapper">
+				<h2 class="movie-header">Description</h2>
+				<p><%=movie.description%> </p>
+			</div>
 
-		<div class="main-characters">
-			<h2 class="movie-header">Main Characters</h2>
-			<ul>
-				<% for (var i = 0; i< main_characters.length; i++){ %>
-					<li><%= main_characters[i]%></li>
-				<% } %>
-			</ul>
-		</div>
+			<div class="main-characters">
+				<h2 class="movie-header">Main Characters</h2>
+				<ul>
+					<% for (var i = 0; i< main_characters.length; i++){ %>
+						<li><%= main_characters[i]%></li>
+					<% } %>
+				</ul>
+			</div>
 
-		<div class="trailer">
-			<h2 class="movie-header">Trailer</h2>
-			<div>
-				<a  href="<%= movie.youtube %>" data-fancybox="video" target="_blank"
-					data-caption="<span title=&quot;Edited&quot;> <%= title %> ✨🎈<br><br>@TetianaKlymchuk</span>">
-					<img src="/images/<%= movie.trailer %>" class="img-responsive">
-				</a>
+			<div class="trailer">
+				<h2 class="movie-header">Trailer</h2>
+				<div>
+					<a  href="<%= movie.youtube %>" data-fancybox="video" target="_blank"
+						data-caption="<span title=&quot;Edited&quot;> <%= title %> ✨🎈<br><br>@TetianaKlymchuk</span>">
+						<img src="/images/<%= movie.trailer %>" class="img-responsive">
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
