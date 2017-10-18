@@ -260,17 +260,24 @@ Movie-Single Poster and Description Styles
 }
 
 .poster-wrapper {
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	width: 30%;
 	margin-top: 50px;
+}
+
+.single-movie-info {
+	display: inline-block;
+	vertical-align: top;
+	width: 65%;
+	padding-right: 5%;
 }
 
 .description-wrapper {
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 5%;
-	padding-right: 5%;
-	width: 65%;
+	width: 100%;
 	margin-top: 50px;
 }
 
@@ -287,8 +294,7 @@ Movie-Single Poster and Description Styles
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 5%;
-	padding-right: 5%;
-	width: 65%;
+	width: 100%;
 	margin-top: 20px;
 }
 
@@ -309,8 +315,7 @@ Movie-Single Poster and Description Styles
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 5%;
-	padding-right: 5%;
-	width: 65%;
+	width: 100%;
 	margin-top: 20px;
 }
 .trailer div {
@@ -364,17 +369,19 @@ Media Queries / Responsive Styles
 		margin-right: auto;
 		margin-left: auto;
 	}
+	.single-movie-info {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+	}
 	.description-wrapper {
 		margin-top: 30px;
-		width: 100%;
 	}
 	.main-characters {
 		margin-top: 30px;
-		width: 100%;
 	}
 	.trailer {
 		margin-top: 30px;
-		width: 100%;
 	}
 
 	.poster {
