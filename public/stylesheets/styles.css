@@ -7,7 +7,6 @@ body {
 .content-padding {
 	padding-left: 11%;
 	padding-right: 11%;
-	margin-left: 50px;
 }
 
 
@@ -248,19 +247,6 @@ Movie-Single Hero Image and Title Styles
 /* ---------------------------------------
 Movie-Single Poster and Description Styles
 ------------------------------------------ */
-.poster-wrapper {
-	float: left;
-	width: 30%;
-	margin-top: 50px;
-}
-
-.description-wrapper {
-	float: right;
-	margin-left: 5%;
-	width: 65%;
-	margin-top: 50px;
-}
-
 .movie-header {
   text-transform: uppercase;
   font-weight: 400;
@@ -273,13 +259,41 @@ Movie-Single Poster and Description Styles
   margin-bottom: 15px;
 }
 
+.poster-wrapper {
+	float: left;
+	width: 30%;
+	margin-top: 50px;
+}
+
+.description-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5%;
+	padding-right: 5%;
+	width: 60%;
+	margin-top: 50px;
+}
+
 .description-wrapper p {
 	line-height: 1.95;
 	letter-spacing: 0.3px;
 	font-size: 13px;
 	margin-bottom: 25px;
 	padding-right: 40px;
+	text-align: justify;
+}
 
+.main-characters {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5%;
+	padding-right: 5%;
+	width: 60%;
+	margin-top: 20px;
+}
+
+.main-characters ul {
+	padding-left: 0px;
 }
 
 .main-characters ul li {
@@ -288,17 +302,22 @@ Movie-Single Poster and Description Styles
 	margin-bottom: 15px;
 	letter-spacing: 0.3px;
 	font-size: 13px;
-	padding-left: 40px;
+	padding-right: 40px;
 }
 
-
-}
 .trailer {
-	float: right;
+	display: inline-block;
+	vertical-align: top;
 	margin-left: 5%;
-	width: 65%;
-	margin-top: 50px;
-
+	padding-right: 5%;
+	width: 60%;
+	margin-top: 20px;
+}
+.trailer div {
+	text-align: center;
+}
+.trailer img {
+	display: inline-block;
 }
 
 
@@ -346,6 +365,14 @@ Media Queries / Responsive Styles
 		margin-left: auto;
 	}
 	.description-wrapper {
+		margin-top: 30px;
+		width: 100%;
+	}
+	.main-characters {
+		margin-top: 30px;
+		width: 100%;
+	}
+	.trailer {
 		margin-top: 30px;
 		width: 100%;
 	}

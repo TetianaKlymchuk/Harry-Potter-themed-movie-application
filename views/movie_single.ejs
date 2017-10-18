@@ -1,61 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<% include partials/head.ejs %>
+	<% include partials/head.ejs %>
 
-
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
-
-
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 </head>
+
+
 <body>
+	<% include partials/header.ejs %>
 
-<% include partials/header.ejs %>
-
-<div id="hero-image-single" style="background-image: url('/images/<%=movie.hero_image%>')">
-<h1 id="hero-title"><%= title %></h1>
-</div>
-
-<div class="content-padding clearfix">
-
-	<div class="poster-wrapper">
-		<img src="/images/<%= movie.poster %>" class="img-responsive">
+	<div id="hero-image-single" style="background-image: url('/images/<%=movie.hero_image%>')">
+		<h1 id="hero-title"><%= title %></h1>
 	</div>
-	
-	
-	<div class="description-wrapper">
+
+	<div class="content-padding clearfix">
+		<div class="poster-wrapper">
+			<img src="/images/<%= movie.poster %>" class="img-responsive">
+		</div>
+
+		<div class="description-wrapper">
 			<h2 class="movie-header">Description</h2>
 			<p><%=movie.description%> </p>
-	</div>
-	
-	<div class="main-characters">
-		<h2 class="movie-header">Main Characters</h2>
-		<ul>
-			<% for (var i = 0; i< main_characters.length; i++){ %> 
-				<li>
-				<%= main_characters[i]%> 	
-				</li>
-			<% } %> 
-		</ul>
-	</div>
-	
-	<div class="trailer">
-		<h2 class="movie-header">Trailer</h2>
-		<ul>
-				<a  href="<%= movie.youtube %>" data-fancybox="video" target="_blank" 
-					data-caption="<span title=&quot;Edited&quot;> <%= title %> ✨🎈<br><br>@TetianaKlymchuk</span>"> 
-				<img src="/images/<%= movie.trailer %>" class="img-responsive">
-				</a>
-				
-		</ul>
-	</div>
-	
-		
-</div>	
+		</div>
 
-<% include partials/footer.ejs %>
-<% include partials/scripts.ejs %>
+		<div class="main-characters">
+			<h2 class="movie-header">Main Characters</h2>
+			<ul>
+				<% for (var i = 0; i< main_characters.length; i++){ %>
+					<li><%= main_characters[i]%></li>
+				<% } %>
+			</ul>
+		</div>
+
+		<div class="trailer">
+			<h2 class="movie-header">Trailer</h2>
+			<div>
+				<a  href="<%= movie.youtube %>" data-fancybox="video" target="_blank"
+					data-caption="<span title=&quot;Edited&quot;> <%= title %> ✨🎈<br><br>@TetianaKlymchuk</span>">
+					<img src="/images/<%= movie.trailer %>" class="img-responsive">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<% include partials/footer.ejs %>
+	<% include partials/scripts.ejs %>
 </body>
 </html>
