@@ -78,7 +78,7 @@ Navbar and Navigation Styles / Overrides
 }
 
 .dropdown.open .dropdown-menu li a:hover {
-	color: #fde5b9;
+	color: red;
 }
 
 .navbar-nav > li:first-child {
@@ -109,6 +109,7 @@ Home Page Posters Styles
 #posters-wrapper {
 	padding-top: 75px;
 }
+
 .poster {
 	width: 20%;
 	margin-left: 4%;
@@ -144,6 +145,10 @@ Home Page Posters Styles
   color: #fff;
   margin: 0px;
   margin-top: 15px;
+}
+.poster-info-overlay h4:hover {
+  color: red;
+	transition: 0.5s ease-in-out;
 }
 .poster:hover .poster-info-overlay {
 	opacity: 1;
@@ -333,20 +338,6 @@ Movie-Single Poster and Description Styles
 Media Queries / Responsive Styles
 -------------------------------- */
 
-/* Decrease content padding */
-@media (max-width: 1024px) {
-	.content-padding {
-		padding-left: 8%;
-		padding-right: 8%;
-	}
-}
-@media (max-width: 767px) {
-	.content-padding {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-}
-
 /* Apply margins to the correct posters on large devices */
 @media (min-width: 992px) {
 	.poster:nth-child(3), .poster:last-child {
@@ -385,7 +376,8 @@ Media Queries / Responsive Styles
 	}
 
 	.poster {
-		width: 47%;
+		width: 46%;
+		margin-left: 2%;
 		margin-bottom: 50px;
 	}
 
@@ -393,6 +385,19 @@ Media Queries / Responsive Styles
 		margin-right: 0px;
 	}
 
+}
+
+@media (max-width: 556px) {
+	.content-padding {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.poster {
+    width: 80%;
+    margin-left: 10%;
+		margin-bottom: 50px;
+	}
 }
 
 /* Increase width of the hero-title element on Movie-single pages to prevent text from stacking */
@@ -451,6 +456,8 @@ Media Queries / Responsive Styles
 	}
 	.poster-info-overlay {
 		padding: 20px 8px;
+		width: 100%;
+		max-width: 400px;
 	}
 }
 
