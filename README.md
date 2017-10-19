@@ -6,20 +6,7 @@ I am a big fan of Harry Potter and when I was facing to the problem of choosing 
 
  I have studied how to install Node and how to use npm to install express and other node modules. I spend time (a lot) going over basic Express.js concepts, such as routing, using templates, partials, writing embedded JavaScript, and the folder structure for a typical application. I also went over how to use a JSON file to get data for an application, added a lot of logic to our routes file, create a dynamic route that passes in information dynamically, wire up the navigation and links.
 
-In order to execute the application in is necessary to make the following steps:
-
-- Write the following command in the command line to install all required packages:
-```
-npm install
-```
-- Write the following command in the command line to start an application:
-```
-node app.js
-```
-- Open  http://localhost:3000/ in your browser
-- Enjoy!
-
-### Here are some Screenshots:
+### Screenshots:
 
 The home page consists of the list of all movies about Harry Potter indicated by posters 
 
@@ -45,6 +32,19 @@ and a trailer which opens in a new window:
 ![screenshot_5](https://user-images.githubusercontent.com/28005338/31769091-c17be2da-b4da-11e7-8d7d-c95b3decacc1.png)
 ![screenshot_6](https://user-images.githubusercontent.com/28005338/31769095-c63e5992-b4da-11e7-9271-5284a7288838.png)
 
+### Run:
+In order to execute the application it is necessary to make the following steps:
+
+- Write the following command in the command line to install all required packages:
+```
+npm install
+```
+- Write the following command in the command line to start an application:
+```
+node app.js
+```
+- Open  http://localhost:3000/ in your browser
+- Enjoy!
 
 
 
